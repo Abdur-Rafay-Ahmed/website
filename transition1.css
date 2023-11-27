@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    overflow: hidden;
+}
+.navbar {
+    overflow: hidden;
+    background-image: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar a{
+    text-decoration: none;
+    float: left;
+    width:13%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+.navbar a :hover{
+    background-color:#262626;
+    color: white;
+}
+.products{
+    width: 100%;
+    height: auto;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.p-items{
+    box-shadow: 4px 4px 4px rgb(148, 147, 147);
+    margin-bottom: 2vh;
+    text-align: center;
+    width:20%;
+}
+#mobilemenu{
+
+    display: none;
+}
+/* deskstop screen  */
+@media (max-width :1980px) and (min-width :900px){
+
+    #mobilemenu{
+        display: none;
+    }
+    .mainmenu{
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navmenu{
+        list-style: none;
+        display: flex;
+    }
+
+    .navmenu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    .rbtn{
+        display: none;
+    }
+    .search{
+        width: 20vw;
+        height: 5vh;
+        border-radius: 5px 5px 5px 5px;
+        margin: auto;
+        margin-right: 10px;
+    }
+
+}
+/* laptop screen  */
+@media (max-width : 900px) and (min-width : 500px) {
+
+    #mobilemenu{
+        display: none;
+    }
+    
+    .mainmenu{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(220, 235, 10);
+    display: flex;
+    justify-content: space-between;
+    }
+    .navmenu{
+        list-style: none;
+        display: flex;
+    }
+    
+    .navmenu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    .rbtn{
+        display: none;
+    }
+}
+
+/* mobile screen */
+@media (max-width : 500px) {
+    .mainmenu{
+        display: none;
+    }
+    #mobilemenu{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(185, 15, 228);
+    }
+    .mobilenavmenu li a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    .rbtn{
+        display: block;
+    }
+}
